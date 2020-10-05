@@ -1,6 +1,7 @@
 #blue{
     background-color: rgb(229, 239, 248);
-    height: 80vh;
+    height: 100vh;
+    position: relative;
 }
 .profile{
     position: relative;
@@ -12,9 +13,31 @@
     left: 38%;
     transform: translate(-38%,15%);
     padding: 5px 13px;
-    
 }
-.add-btn{
-    padding-left: 5rem;
-    padding-right: 5rem;
+
+.view-btn{
+    background-color: white;
+    font-weight: 600;
+}
+/********************************** medium screen ************************************************/
+@media screen and (min-width:768px){
+    #business-card{
+        position: absolute;
+        top:48%;
+        left: 50%;
+        transform: translate(-50%,48%);
+    }
+   
+}
+
+/********************************* large  screens *******************************************/
+@media screen and (min-width:992px){
+    
+    
+    #business-card{
+        position: absolute;
+        top:30%;
+        left: 50%;
+        transform: translate(-50%,30%);
+    }
 }
