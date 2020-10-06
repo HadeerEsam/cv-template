@@ -1,7 +1,7 @@
+
+
 #blue{
-    background-color: rgb(229, 239, 248);
-    height: 100vh;
-    position: relative;
+    background-image: linear-gradient(rgb(229, 239, 248) 75%,white 30%);
 }
 .profile{
     position: relative;
@@ -9,9 +9,9 @@
 }
 .pen-icon{
     position: absolute;
-    bottom: -15%;
+    bottom: -13%;
     left: 38%;
-    transform: translate(-38%,15%);
+    transform: translate(-38%,13%);
     padding: 5px 13px;
 }
 
@@ -19,25 +19,56 @@
     background-color: white;
     font-weight: 600;
 }
-/********************************** medium screen ************************************************/
-@media screen and (min-width:768px){
-    #business-card{
-        position: absolute;
-        top:48%;
-        left: 50%;
-        transform: translate(-50%,48%);
-    }
-   
+.overview{
+    border-radius: 5px;
+    background-color: rgb(229, 239, 248);
+    border: 1px rgb(194, 215, 233) solid;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.experience{
+    background-color: rgb(238, 247, 253);
+    border: 3px dashed  rgb(224, 224, 224);
+    padding: 0.5rem;
 }
 
-/********************************* large  screens *******************************************/
-@media screen and (min-width:992px){
-    
-    
-    #business-card{
-        position: absolute;
-        top:30%;
-        left: 50%;
-        transform: translate(-50%,30%);
-    }
+.bdr{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(238, 247, 253);
+    background-image:
+        linear-gradient(0deg, transparent 50%, #007bff 50%),
+        linear-gradient(360deg,  rgb(238, 247, 253) 50%, transparent 50%);
 }
+.steps .percentage{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+}
+    
+
+.half-circle {    
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    /* border-top: solid transparent ; */
+    border-right:4px dotted #007bff;
+    
+}
+.fa-check{
+    color: rgb(144, 215, 231);
+}
+
+/********************************** medium screen ************************************************/
+@media screen and (min-width:768px){
+    .brd-r{
+        border-right: 1px rgb(218, 216, 216) solid;
+    }  
+}
+
+
